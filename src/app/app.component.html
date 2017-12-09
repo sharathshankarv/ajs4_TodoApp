@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="list-wrapper">
+      <div class="row">          
+          <div class="col-lg-12">
+            <div class="input-group">
+              <input #task type="text" (keyup.enter)="addTask(task.value)" class="form-control" placeholder="Search for..." >
+              <span class="input-group-btn">
+                <button class="btn btn-default" (click)="addTask(task.value)"  type="button">Go!</button>
+              </span>
+            </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    <ul>
+      <li *ngFor="let list of lists"
+          (click)="taskCompleted(list)"
+          [class.strike-through]="list.status"
+      ><blockquote>{{list.task}}</blockquote></li>
+    </ul>
+  </div>
+</div>

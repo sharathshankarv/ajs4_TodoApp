@@ -1,0 +1,18 @@
+.strike-through{
+    text-decoration: line-through;
+    color: #f00;
+}
+
+.list-wrapper{
+    position: relative;
+    width: 240px;
+    display: block;
+    margin: 0 auto;
+    background-color: #eaeaea;
+    padding: 10px 20px;
+}
+
+.list-wrapper ul{
+    padding: 0;
+    list-style-type: none;
+}
